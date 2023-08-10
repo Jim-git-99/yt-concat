@@ -1,10 +1,13 @@
 import urllib.request
 import json
+from settings import API_KEY
 
 CHANNEL_ID = 'UC7o64rkXin-ZS_gU6_pBDvA'
+api_key = API_KEY
+print(api_key)
 
 def get_all_video_in_channel(channel_id):
-    api_key = 'AIzaSyAUmS1TU3U-POdwB-OpVP9HcOM2XXUNfPg'
+    
 
     base_video_url = 'https://www.youtube.com/watch?v='
     base_search_url = 'https://www.googleapis.com/youtube/v3/search?'
@@ -29,5 +32,5 @@ def get_all_video_in_channel(channel_id):
     return video_links
 
 
-video_url_list = get_all_video_in_channel(CHANNEL_ID)
-print(len(video_url_list))
+# video_url_list = get_all_video_in_channel(CHANNEL_ID)
+# print(len(video_url_list))
